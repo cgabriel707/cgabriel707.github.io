@@ -1,0 +1,48 @@
+.footer{
+  background-color: #000000;
+}
+
+.footer-container{
+  max-width: 1200px; /* Limit the width of the header */
+  padding: 120px 20px 60px 20px; /*Quando se quer desgrudar da margem geralmente trabalhomos com pading*/
+  margin: 0 auto; /* Center the header */
+  display: grid; 
+  grid-template-columns: 1fr 1fr; 
+  gap: 100px;
+}
+
+.footer-texto{
+  font-size: 1.5rem;
+  line-height: 1.33;
+  color: #cccccc;
+}
+
+.footer-contato li{
+  font-weight: bold;
+  font-size: 2.25rem;
+  color: #ffffff;
+  margin-bottom: 30px;
+  align-items: center;
+}
+
+.footer-contato a{
+  color: #ffffff;
+  text-decoration: none;
+}
+
+.footer-copy {
+  grid-column: 1 / -1; 
+  font-size: 1.125rem; /*faz com que o elemento ocupe toda a largura do grid*/
+  color: #8f8f8f;
+}
+
+@media(max-width: 800px) {
+  .footer-container{
+    grid-template-columns: 1fr; 
+    gap: 40px;
+    
+  .footer-contato li{
+    font-size: 1.5rem;
+  }
+}
+}
